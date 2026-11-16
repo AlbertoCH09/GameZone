@@ -1,0 +1,144 @@
+/* Pengaturan dasar halaman */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+/* Bagian atas website */
+header {
+    background-color: #252545;
+    color: white;
+    padding: 18px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #c7a5ff;
+}
+
+nav {
+    text-align: right;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+nav a:hover {
+    color: #c7a5ff;
+}
+
+/* Bagian sambutan */
+.sambutan {
+    background-color: #e8e1f5;
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.sambutan h2 {
+    margin-top: 0;
+}
+
+.tombol {
+    display: inline-block;
+    background-color: #6040a0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    margin-top: 12px;
+    border-radius: 4px;
+}
+
+.tombol:hover {
+    background-color: #432b78;
+}
+
+/* Daftar game */
+.konten {
+    padding: 30px;
+    text-align: center;
+}
+
+.daftar-game {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-top: 25px;
+}
+
+.kartu {
+    background-color: white;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.kartu img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.kartu h3 {
+    margin-bottom: 8px;
+}
+
+.kartu:hover {
+    background-color: #eee8f8;
+}
+
+/* Halaman tentang */
+.isi-tentang {
+    background-color: white;
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    line-height: 1.6;
+}
+
+/* Bagian bawah website */
+footer {
+    background-color: #252545;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+/* Tampilan tablet dan HP */
+@media screen and (max-width: 700px) {
+    header {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    nav {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    nav a {
+        margin: 0 7px;
+    }
+
+    .daftar-game {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .daftar-game {
+        grid-template-columns: 1fr;
+    }
+
+    .konten {
+        padding: 20px;
+    }
+}
